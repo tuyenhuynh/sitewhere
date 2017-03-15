@@ -12,7 +12,7 @@
 
 	<!-- Load property values for substitution -->
 	<context:property-placeholder
-		location="file:${sitewhere.home}/conf/tenants/${tenant.id}/sitewhere-tenant.properties"
+		location="file:/opt/sitewhere/conf/tenants/${tenant.id}/sitewhere-tenant.properties"
 		ignore-resource-not-found="true" />
 
 	<!-- ######################## -->
