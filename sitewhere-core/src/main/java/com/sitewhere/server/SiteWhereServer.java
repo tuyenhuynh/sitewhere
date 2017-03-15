@@ -655,7 +655,7 @@ public class SiteWhereServer extends LifecycleComponent implements ISiteWhereSer
 	String sitewhere = System.getProperty(ISiteWhereServer.ENV_SITEWHERE_HOME);
 	if (sitewhere == null) {
 	    // Support fallback environment variable name.
-	    sitewhere = System.getProperty("SITEWHERE_HOME");
+	    sitewhere = "/opt/sitewhere"; //System.getProperty("SITEWHERE_HOME");
 	    if (sitewhere == null) {
 		throw new SiteWhereException(
 			"SiteWhere home environment variable (" + ISiteWhereServer.ENV_SITEWHERE_HOME + ") not set.");
